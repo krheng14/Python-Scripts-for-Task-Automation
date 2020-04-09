@@ -8,4 +8,5 @@
 - Uploaded resize_image_compressed.py
 - Resize image files (.jpg, .jpeg, .png) in the same folder with a user-input factor
 - Example: factor = 2, original image size = 1000\*500, resized image = 500\*250
+- Library/Module required: *numpy, os, PIL, imageio, time*
 
