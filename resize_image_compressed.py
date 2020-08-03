@@ -25,11 +25,15 @@ print('\n\n')
 
 # time.sleep(30) # Checkpoint
 
-print("Please enter the factors to be resized, i.e. 2,3.. etc,\n")# + 
-        #"Input with decimal will take only the number before decimal point as factor: ")
-resized_factor = float(input())
+while True: # To allow error in user input
+    user_input = input("Please enter the factors to be resized, i.e. 2,3.. etc,\n")
+    try:
+        resized_factor = float(user_input)
+        break
+    except ValueError:
+        continue
+
 # resized_factor = int(float(input()))
-# print(resized_factor)
 while float(resized_factor) == 0.0:
     print("Enter again, no zero")
     resized_factor = float(input())
